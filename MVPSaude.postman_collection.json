@@ -1,0 +1,487 @@
+{
+	"info": {
+		"_postman_id": "4db9fe87-b5dd-495e-9e32-6c1c7ac90254",
+		"name": "MVPSaude",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23069272"
+	},
+	"item": [
+		{
+			"name": "Paciente",
+			"item": [
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Paciente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Paciente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 1,\r\n  \"nomePaciente\": \"Sr. João da Silva\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Paciente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Paciente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Paciente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Paciente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Paciente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Paciente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Paciente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Paciente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medico",
+			"item": [
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"medicoId\": 0,\r\n  \"nomeMedico\": \"Dr. Zé das Figueiras da Silva\",\r\n  \"crm\": \"171555\",\r\n  \"especialidade\": \"Clínico Geral\",\r\n  \"contato\": \"1199999999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Medico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Medico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"medicoId\": 1,\r\n  \"nomeMedico\": \"Dr. José das Figueiras da Silva\",\r\n  \"crm\": \"171555\",\r\n  \"especialidade\": \"Clínico Geral\",\r\n  \"contato\": \"1199999999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Medico/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Medico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Medico/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Medico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Medico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Medico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Medico/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Medico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prontuario",
+			"item": [
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"prontuarioId\": 0,\r\n  \"pacienteId\": 1,\r\n  \"histPaciente\": \"Paciente com histórico de Diabetes\",\r\n  \"medicamento\": \"Fluoxetina 60\",\r\n  \"triagem\": \"Pressão 12/8\",\r\n  \"histFamiliar\": \"Pai com problemas cardíacos\",\r\n  \"exames\": \"Sem resultados\",\r\n  \"dataProntuario\": \"0001-01-01T00:00:00\",\r\n  \"medicoId\": 1  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Prontuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Prontuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"prontuarioId\": 1,\r\n  \"pacienteId\": 1,\r\n  \"histPaciente\": \"Paciente com histórico de Diabetes\",\r\n  \"medicamento\": \"Fluoxetina 40\",\r\n  \"triagem\": \"Pressão 12/8\",\r\n  \"histFamiliar\": \"Pai com problemas cardíacos\",\r\n  \"exames\": \"Sem resultados\",\r\n  \"dataProntuario\": \"0001-01-01T00:00:00\",\r\n  \"medicoId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Prontuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Prontuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Prontuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Prontuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Prontuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Prontuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacienteId\": 0,\r\n  \"nomePaciente\": \"Sr. João\",\r\n  \"cpf\": \"2555545487\",\r\n  \"dataNascimento\": \"2023-09-24\",\r\n  \"genero\": \"Masculino\",\r\n  \"endereco\": \"Rua Consolação, 1000\",\r\n  \"contato\": \"1154545454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5041/api/Prontuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5041",
+							"path": [
+								"api",
+								"Prontuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
